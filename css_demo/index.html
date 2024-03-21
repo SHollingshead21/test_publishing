@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollingshead | CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #purple-text {
+            color:purple;
+        }
+        .hot-pink-text {
+            color:hotpink;
+        }
+        #multi-text {
+            color:chartreuse;
+            font-size:60px;
+            text-align:right;
+        }
+    </style>
+</head>
+<body style="background-color: skyblue;">
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Today we will learn about adding style with CSS.</h1>
+    <h2>This is how we use inline CSS</h2>
+    <p style="color:blue;">I want this text to be blue.</p>
+    <p style="color:pink;">But I want this text to be pink</p>
+    <p style="font-size: 50px">I want this text to be really big.</p>
+    <p style="font-size: 5px;">But I want this text to be small.</p>
+    <p style="color:orange; font-size: 24px; text-align:center;">This font is orange, 24px, and centered.</p>
+
+    <h2>This is how we add style with INTERNAL CSS.</h2>
+    <p id="purple-text">I want this text to be purple.</p>
+    <p class="hot-pink-text">But I want this text to be hot pink</p>
+    <p class="hot-pink-text">I want this text to be hot pink, too!</p>
+    <p id="multi-text">I want this text to be chartreuse, BIG, and right-aligned</p>
+
+    <h2>This is how we use EXTERNAL styling with divs and spans</h2>
+    <div class="copy">
+        <p>This line is part of a div.</p>
+        <p>So is this one!</p>
+        <p>This <span id="span1">word</span>and this <span id="span2">group of words</span> will be styled differently</p>
+    </div>
+
+    <div>
+        <p>Look at this awesome picture!</p>
+        <img src="images/salmonweb2.jpg" width="300">
+    </div>
+</body>
+</html>
