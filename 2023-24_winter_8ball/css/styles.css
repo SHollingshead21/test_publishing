@@ -1,0 +1,14 @@
+body {
+    background-color: cornflowerblue;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+#fortune-display {
+    font-size: 28pt;
+}
