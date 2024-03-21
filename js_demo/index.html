@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollingshead | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1>Today, we will learn about JavaScript.</h1>
+    <h2>How do we do onclick events?</h2>
+    <p>Click <a href="http://www.google.com" target="_blank" onclick="alert('Warning! You are leaving my site!\nAre you suuuure you want to do that?')">here</a> to search Google.</p>
+    <p>Click <a href="http://www.eastsideprep.org" target="_blank" onclick="alert('Have fun!')">here</a> to visit my school's website</p>
+
+    <h2>How do we change text with JS?</h2>
+    <button onclick="document.getElementById('change-text').innerHTML='Hello Javascript!'">Click me to change the text below</button>
+    <p id="change-text">We can change HTML with JS!</p>
+
+    <h2>We can use JS to display the date and time</h2>
+    <button onclick="document.getElementById('date').innerHTML= Date()">Click me for the date and time</button>
+    <p id="date"></p>
+
+    <h2>How do we make a function?</h2>
+    <p>Let's use a function to add some text.</p>
+    <button onclick="pFun()">Click me to run a function!</button>
+    <p id="p-fun"></p>
+
+    <h2>How do we return user data with JS?</h2>
+    <button onclick="askName()">Click here to enter your name</button>
+    <p id="ask-name"></p>
+
+    <h2>How do we ask questions with external JS?</h2>
+    <button onclick="askQuestion()">Click here for a cool question!</button>
+    <p id="ask-question"></p>
+
+    <script>
+        //alert("Hello, world! \nWelcome to my website!");
+
+        function pFun() {
+            document.getElementById('p-fun').innerHTML='BOO! Surprise, there is text here!';
+            document.getElementById('p-fun').style.fontSize='30px';
+            document.getElementById('p-fun').style.color ='red';
+            document.getElementById('p-fun').style.textAlign='center';
+        }
+
+        function askName() {
+            var nameReturn = document.getElementById('ask-name');
+            var name = prompt('Please enter your name' , 'HERE');
+            if (name=='') {
+                alert('Please try again');
+            } else {
+                nameReturn.innerHTML = 'Hello ' + name + '! Nice to meet you!';
+            }
+        }
+    </script>
+</body>
+</html>
